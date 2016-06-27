@@ -21,3 +21,8 @@ En Java (à tester,  merci à Amel / Cyril / Patrick / DEFT)
 - aller dans le `Retriever/Java`
 - configurer le `App.properties` (les clés, éventuellement le fichiers d'IDs et le répertoire de sortie)
 - `java -jar  tweet_basic-retriever.jar`
+
+## Les notes d'Eric
+Compte twitter: eric@spawnr.fr, thefoxjumpedover1fence
+
+
