@@ -23,6 +23,8 @@ En Java (à tester,  merci à Amel / Cyril / Patrick / DEFT)
 - `java -jar  tweet_basic-retriever.jar`
 
 ## Les notes d'Eric
-Compte twitter: eric@spawnr.fr, thefoxjumpedover1fence
+Compte twitter: hackathonhackatal@yahoo.com, hackatal1, thefoxjumpedover1fence
+
+
 
 
