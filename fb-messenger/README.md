@@ -1,6 +1,10 @@
 # Messenger Platform Sample
 
-This is a sample project showcasing the Messenger Platform. You can go through the [walk-through](https://developers.facebook.com/docs/messenger-platform/quickstart) to understand this code in more detail. The [Complete Guide](https://developers.facebook.com/docs/messenger-platform/implementation) goes deeper into the features available.
+Page name: Eurosoccerbot
 
-Visit the [dev site](https://developers.facebook.com/docs/messenger-platform/) to find out more details about the Messenger Platform.
+[Tutorial](https://developers.facebook.com/docs/messenger-platform/quickstart)
+
+Use a local tunnel for local testing.
+
+If you use ngrok, the latter generates a different url every time, so you must change it in the app's webhooks.
 
