@@ -2,6 +2,8 @@
 
 ## Creating intents and expressions
 
+For training, use developer token.
+
 ### Create an intent
 
     curl -X POST -H "Content-Type: application/json" -H "Authorization: Token a717af48bbb2eeded81abdd61e482dd5" -H "Cache-Control: no-cache" -H "Postman-Token: 87f3d789-9905-5359-14ed-91421de9547d" -d '{"name":"Follow a game"
@@ -55,6 +57,8 @@
     req.end();
     
 ## Making requests to the bot
+
+For requesting to bot, use access token.
 
 ### curl
 
