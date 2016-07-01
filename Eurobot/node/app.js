@@ -333,8 +333,6 @@ function sendTextMessage(recipientId, messageText) {
 function respond(recipientId, messageText){
 
   bot.answer(messageText, RECAST_ACCESS_TOKEN).then(function(botResponse){
-    console.log("bot's response");
-    console.log(JSON.stringify(botResponse))
     sendTextMessage(recipientId, botResponse.text)
   })
 
