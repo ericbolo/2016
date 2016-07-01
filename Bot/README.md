@@ -6,13 +6,83 @@ For training, use developer token.
 
 ### Create an intent
 
+#### curl
+
     curl -X POST -H "Content-Type: application/json" -H "Authorization: Token a717af48bbb2eeded81abdd61e482dd5" -H "Cache-Control: no-cache" -H "Postman-Token: 87f3d789-9905-5359-14ed-91421de9547d" -d '{"name":"Follow a game"
     }' "https://api.recast.ai/v1/users/ericbolo/bots/hackatal/intents"
 
+#### nodeJS
+
+    var http = require("https");
+    
+    var options = {
+      "method": "POST",
+      "hostname": "api.recast.ai",
+      "port": null,
+      "path": "/v1/users/ericbolo/bots/hackatal/intents",
+      "headers": {
+        "content-type": "application/json",
+        "authorization": "Token a717af48bbb2eeded81abdd61e482dd5",
+        "cache-control": "no-cache",
+        "postman-token": "e2bab823-c3ea-fb37-1ac6-aceba287e8fa"
+      }
+    };
+    
+    var req = http.request(options, function (res) {
+      var chunks = [];
+    
+      res.on("data", function (chunk) {
+        chunks.push(chunk);
+      });
+    
+      res.on("end", function () {
+        var body = Buffer.concat(chunks);
+        console.log(body.toString());
+      });
+    });
+    
+    req.write(JSON.stringify({ name: 'Follow a game' }));
+    req.end();
+
 ### Create an expression for that intent
+
+#### curl
 
     curl -X POST -H "Content-Type: application/json" -H "Authorization: Token a717af48bbb2eeded81abdd61e482dd5" -H "Cache-Control: no-cache" -H "Postman-Token: 13ba807b-0811-7082-ee03-1f83cee1ff99" -d '{"source": "I want to follow England's next game"
     }' "https://api.recast.ai/v1/users/ericbolo/bots/hackatal/intents/follow-a-game-1/expressions"
+
+#### nodeJS
+
+    var http = require("https");
+    
+    var options = {
+      "method": "POST",
+      "hostname": "api.recast.ai",
+      "port": null,
+      "path": "/v1/users/ericbolo/bots/hackatal/intents/follow-a-game-1/expressions",
+      "headers": {
+        "content-type": "application/json",
+        "authorization": "Token a717af48bbb2eeded81abdd61e482dd5",
+        "cache-control": "no-cache",
+        "postman-token": "6fea5ffb-b5cf-a05b-3ea4-d72584f96ec5"
+      }
+    };
+    
+    var req = http.request(options, function (res) {
+      var chunks = [];
+    
+      res.on("data", function (chunk) {
+        chunks.push(chunk);
+      });
+    
+      res.on("end", function () {
+        var body = Buffer.concat(chunks);
+        console.log(body.toString());
+      });
+    });
+    
+    req.write(JSON.stringify({ source: 'I want to follow England\'s next game' }));
+    req.end();
 
 ### Bulk-create expressions for an intent
 
