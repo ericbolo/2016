@@ -2,3 +2,6 @@
 Playing around with simple classification tasks using nltk.
 
 Requires the nltk package: http://www.nltk.org/install.html
+Download the "names" corpus:
+
+    nltk.download('names')
